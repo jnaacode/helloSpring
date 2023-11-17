@@ -4,6 +4,7 @@ import hello.helloSpring.controller.domain.Member;
 import hello.helloSpring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,8 +13,13 @@ import static org.assertj.core.api.Assertions.*;
 class memberServiceTest {
 
     memberService memberService = new memberService();
-    MemoryMemberRepository memberRepository = new MemoryMemberRepository();
+    MemoryMemberRepository memberRepository;
 
+    @BeforeEach
+    public void beforeEach(){
+        memberRepository = new MemoryMemberRepository();
+        memberService = new memberService(memberRepository);
+    }
 
     @AfterEach
     public void afterEach(){
