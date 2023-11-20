@@ -1,9 +1,8 @@
 package hello.helloSpring.service;
 
-import hello.helloSpring.controller.domain.Member;
+import hello.helloSpring.domain.Member;
 import hello.helloSpring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package hello.helloSpring.controller.domain;
+package hello.helloSpring.domain;
 
 public class Member {
 
