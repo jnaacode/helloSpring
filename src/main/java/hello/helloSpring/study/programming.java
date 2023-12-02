@@ -19,6 +19,12 @@ public class programming {
         int result=num1 / num2;
         return result;
     }
+
+
+    public static void main(String []args){
+        System.out.println("Calculator class started!");
+    }
+
 }
 
 
